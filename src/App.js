@@ -15,9 +15,9 @@ function App() {
   // )
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/arcade'>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/arcade" element={<Home />} />
           <Route path='/tictactoe' element={<TicTacToe />} />
           <Route path='/dotsandconnect' element={<DotsAndConnect />} />
         </Routes>

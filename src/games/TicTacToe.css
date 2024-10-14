@@ -1,0 +1,43 @@
+.gameBody{
+    height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  text-align: center;
+  }
+.field {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 10%;
+    color: #000000;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0.1rem;
+    -webkit-text-stroke: 1px #000000;
+}
+.field.outline-text {
+    outline-color: black;
+    outline-width: 2px;
+}
+.breathe {
+    animation-name: breathe;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes breathe {
+    0% {
+        font-size: 6vw;
+    }
+
+    50% {
+        font-size: 5.5vw;
+    }
+
+    100% {
+        font-size: 6vw;
+    }
+}

@@ -8,9 +8,9 @@ function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/">
-  <Route index element={<Home />} />
-  <Route path='/tictactoe' element={<TicTacToe />} />
-  <Route path='/dotsandconnect' element={<DotsAndConnect />} />
+        <Route index element={<Home />} />
+        <Route path='/tictactoe' element={<TicTacToe />} />
+        <Route path='/dotsandconnect' element={<DotsAndConnect />} />
       </Route>)
   )
   return (
@@ -21,3 +21,4 @@ function App() {
 }
 
 export default App;
+
